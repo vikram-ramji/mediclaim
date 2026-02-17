@@ -21,14 +21,14 @@ A high-performance, split-screen dashboard for reviewing medical claims. This ap
 - **Responsive Design:** Built with a "card-based" architecture for readability and visual hierarchy.
 - **Performance Optimized:** Uses `IntersectionObserver` for scroll detection to avoid main-thread blocking event listeners.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** [React](https://reactjs.org/) (Vite)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **PDF Rendering:** [react-pdf](https://github.com/wojtekmaj/react-pdf)
 - **Icons:** [Lucide React](https://lucide.dev/)
 
-## 🏗️ Architecture & Decisions
+## Architecture & Decisions
 
 - **State Management**: Used ContextAPI (UseContext) to manage state effeciently, preventing nested prop-drilling.
 
