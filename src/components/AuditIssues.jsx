@@ -1,4 +1,4 @@
-import { AlertCircle, AlertTriangle, CircleAlert } from "lucide-react";
+import { AlertCircle, AlertTriangle } from "lucide-react";
 import Card from "./Card";
 import { formatMoney } from "../utils/formatMoney";
 import { useState } from "react";
@@ -9,7 +9,7 @@ const AuditIssues = ({
   medicalLegibility,
 }) => {
   const [showViolations, setShowViolations] = useState(false);
-  const [showFlags, setShowflags] = useState(false);
+  const [showFlags, setShowFlags] = useState(false);
   return (
     <Card>
       <span className="text-xs uppercase tracking-wider font-semibold text-gray-500">
@@ -29,7 +29,7 @@ const AuditIssues = ({
               className="cursor-pointer"
               onClick={() => setShowViolations(!showViolations)}
             >
-              <span className="text-sm text-red-600">[ View Details ]</span>
+              <span className="text-sm text-red-600">[ {showViolations ? "Hide Details" : "View Details"} ]</span>
             </button>
           </div>
           {!showViolations && (
@@ -86,9 +86,9 @@ const AuditIssues = ({
             </div>
             <button
               className="cursor-pointer"
-              onClick={() => setShowflags(!showFlags)}
+              onClick={() => setShowFlags(!showFlags)}
             >
-              <span className="text-sm text-amber-600">[ View Details ]</span>
+              <span className="text-sm text-amber-600">[ {showFlags ? "Hide Details" : "View Details"} ]</span>
             </button>
           </div>
           {!showFlags && (

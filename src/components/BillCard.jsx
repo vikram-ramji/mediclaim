@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useClaim } from "../context/ClaimContext";
 import Card from "./Card";
-import { AlertCircle, ChevronRight } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
 const BillCard = ({ bill, items }) => {
   const [open, setOpen] = useState(false);

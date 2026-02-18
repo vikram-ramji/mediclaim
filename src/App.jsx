@@ -1,4 +1,3 @@
-
 import ClaimDetails from "./components/ClaimDetails";
 import PDFViewer from "./components/PDFViewer";
 
